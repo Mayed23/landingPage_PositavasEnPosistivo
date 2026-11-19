@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Únete a nuestra comunidad | Positivas en Positivo
+{% endblock %}
+
+{% block content %}
+
+<section class="contacto">
+    <div class="contacto-contenido">
+
+        <p class="seccion-etiqueta">NUESTRA COMUNIDAD</p>
+
+        <h1>
+            Hay un espacio para ti.
+            <span>Nos encantará conocerte.</span>
+        </h1>
+
+        <p class="contacto-descripcion">
+            Queremos conocerte y mantenernos en contacto.
+            Completa este formulario si deseas recibir información
+            sobre nuestras actividades e iniciativas.
+        </p>
+
+        {% if solicitud_enviada %}
+            <p class="mensaje-exito">
+                ¡Gracias por escribirnos! Hemos recibido tu solicitud.
+            </p>
+        {% endif %}
+
+        {% if error_formulario %}
+            <p class="mensaje-error">{{ error_formulario }}</p>
+        {% endif %}
+
+        <form class="formulario-comunidad" method="post">
+            {% csrf_token %}
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre"
+                placeholder="Tu nombre" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo"
+                placeholder="tu@email.com" required>
+
+            <label for="telefono">WhatsApp (con código de país)</label>
+            <input type="tel" id="telefono" name="telefono"
+                placeholder="+56 9 1234 5678" required>
+
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais"
+                placeholder="¿Desde dónde nos escribes?" required>
+
+            <label for="mensaje">Cuéntanos algo sobre ti (opcional)</label>
+            <textarea id="mensaje" name="mensaje"
+                    rows="4"
+                    placeholder="Queremos conocerte..."></textarea>
+
+            <label class="consentimiento">
+                <input type="checkbox" name="consentimiento" required>
+                <span>
+                    Acepto que mis datos sean utilizados únicamente
+                    para responder a esta solicitud y mantenerme
+                    informado/a sobre la comunidad.
+                </span>
+            </label>
+
+            <button type="submit" class="boton-principal">
+                Enviar solicitud
+            </button>
+        </form>
+
+        <a href="{% url 'home' %}" class="volver-inicio">
+            Volver a la página principal
+        </a>
+
+    </div>
+</section>
+
+{% endblock %}

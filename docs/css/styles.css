@@ -1,0 +1,579 @@
+
+/* =================================
+    IDENTIDAD VISUAL
+    Positivas en Positivo
+================================= */
+
+:root {
+    --terracota: #f95e5e;
+    --arcilla: #f7beaa;
+    --beige: #f9b1b15c;
+    --marfil: #F8F2EA;
+    --oliva: #5c6b4b;
+    --texto: #40352F;
+}
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: var(--marfil);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+
+header {
+    background-color: var(--marfil);
+    padding: 20px 6%;
+    border-bottom: 1px solid var(--beige);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: var(--terracota);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul a {
+    color: var(--texto);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+nav ul a:hover {
+    color: var(--terracota);
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    min-height: 70vh;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+h1, h2, h3 {
+    color: var(--terracota);
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: var(--oliva);
+    color: var(--marfil);
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+
+/* =================================
+    SECCIÓN DE BIENVENIDA
+================================= */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 90px 10%;
+    background-color: var(--beige);
+}
+
+.hero-contenido {
+    max-width: 850px;
+}
+
+.hero-etiqueta {
+    color: var(--oliva);
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--oliva);
+}
+
+.hero-descripcion {
+    max-width: 680px;
+    margin: 0 auto 35px;
+    font-size: 1.15rem;
+}
+
+.boton-principal {
+    display: inline-block;
+    background-color: var(--terracota);
+    color: var(--marfil);
+    padding: 13px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton-principal:hover {
+    background-color: var(--oliva);
+}
+
+
+/* =================================
+    NUESTRA HISTORIA
+================================= */
+
+.historia {
+    background-color: var(--marfil);
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.historia-contenido {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.seccion-etiqueta {
+    color: var(--oliva);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.historia h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 30px;
+}
+
+.historia h2 span {
+    display: block;
+    color: var(--oliva);
+}
+
+.historia p:not(.seccion-etiqueta) {
+    font-size: 1.08rem;
+    margin-bottom: 20px;
+}
+
+
+/* =================================
+    NUESTRA COMUNIDAD
+================================= */
+
+.comunidad {
+    background-color: var(--beige);
+    text-align: center;
+    padding: 100px 8%;
+}
+
+.comunidad-encabezado {
+    max-width: 800px;
+    margin: 0 auto 55px;
+}
+
+.comunidad h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 25px;
+}
+
+.comunidad h2 span {
+    display: block;
+    color: var(--oliva);
+}
+
+.comunidad-encabezado > p:last-child {
+    font-size: 1.08rem;
+}
+
+.comunidad-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.tarjeta-comunidad {
+    background-color: var(--marfil);
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: left;
+    border-bottom: 4px solid var(--arcilla);
+}
+
+.tarjeta-comunidad h3 {
+    color: var(--terracota);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta-comunidad p {
+    font-size: 1rem;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 768px) {
+    .comunidad-tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =================================
+    NUESTROS JOURNALS
+================================= */
+
+.journals {
+    background-color: var(--marfil);
+    padding: 100px 8%;
+}
+
+.journals-encabezado {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.journals h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 25px;
+}
+
+.journals h2 span {
+    display: block;
+    color: var(--oliva);
+}
+
+.journals-encabezado > p:last-child {
+    font-size: 1.08rem;
+}
+
+.journals-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.journal-card {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(64, 53, 47, 0.08);
+}
+
+.journal-imagen {
+    background-color: var(--beige);
+    min-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.journal-imagen img {
+    max-width: 100%;
+    max-height: 340px;
+    object-fit: contain;
+}
+
+.journal-info {
+    padding: 30px;
+}
+
+.journal-categoria {
+    color: var(--oliva);
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.journal-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.journal-info p:not(.journal-categoria) {
+    margin-bottom: 25px;
+}
+
+.boton-journal {
+    display: inline-block;
+    background-color: var(--terracota);
+    color: var(--marfil);
+    padding: 11px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.boton-journal:hover {
+    background-color: var(--oliva);
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 768px) {
+    .journals-contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==============================
+    SECCIÓN DE CONTACTO
+============================== */
+
+.contacto {
+    padding: 90px 8%;
+    background-color: var(--marfil);
+}
+
+.contacto-contenido {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacto h1,
+.contacto h2 {
+    color: var(--terracota);
+    margin: 15px 0 20px;
+}
+
+.contacto h1 span,
+.contacto h2 span {
+    display: block;
+    color: var(--oliva);
+}
+
+.contacto-descripcion {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: var(--texto);
+    line-height: 1.8;
+}
+
+/* REDES SOCIALES */
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 40px 0;
+}
+
+.enlace-red {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 110px;
+    padding: 22px 20px;
+    color: var(--oliva);
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid var(--beige);
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.enlace-red i {
+    font-size: 28px;
+}
+
+.enlace-red span {
+    font-size: 14px;
+}
+
+.enlace-red:hover {
+    color: var(--terracota);
+    background-color: var(--beige);
+    transform: translateY(-4px);
+}
+
+.invitacion-comunidad {
+    margin-top: 45px;
+    padding-top: 25px;
+}
+
+/* FORMULARIO DE COMUNIDAD */
+
+.formulario-comunidad {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 35px auto;
+    padding: 38px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(80, 55, 40, 0.08);
+    text-align: left;
+}
+
+.formulario-comunidad label {
+    color: var(--oliva);
+    font-weight: 600;
+}
+
+.formulario-comunidad input:not([type="checkbox"]),
+.formulario-comunidad textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #D9C8B9;
+    border-radius: 9px;
+    background-color: #FFFCF9;
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.formulario-comunidad input:focus,
+.formulario-comunidad textarea:focus {
+    outline: none;
+    border-color: var(--terracota);
+    box-shadow: 0 0 0 3px rgba(249, 94, 94, 0.12);
+}
+
+.formulario-comunidad textarea {
+    resize: vertical;
+}
+
+.formulario-comunidad .consentimiento {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.consentimiento input {
+    margin-top: 4px;
+    accent-color: var(--terracota);
+}
+
+.formulario-comunidad .boton-principal {
+    display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.mensaje-exito {
+    color: #426B45;
+    margin: 20px 0;
+}
+
+.mensaje-error {
+    color: #A33D32;
+    margin: 20px 0;
+}
+
+.volver-inicio {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--terracota);
+    text-decoration: none;
+}
+
+.volver-inicio:hover {
+    color: var(--oliva);
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 600px) {
+
+    .contacto {
+        padding: 65px 5%;
+    }
+
+    .contacto h1,
+    .contacto h2 {
+        font-size: 1.9rem;
+    }
+
+    .formulario-comunidad {
+        padding: 25px 20px;
+    }
+
+    .redes-sociales {
+        gap: 12px;
+    }
+
+    .enlace-red {
+        min-width: 95px;
+        padding: 16px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav ul a {
+        font-size: 0.85rem;
+    }
+}
+

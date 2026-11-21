@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Positivas en Positivo | Un espacio para compartir</title>
+    <title>Positivas en Positivo | Historias que nos conectan</title>
 
-    <meta name="description" content="Un espacio para compartir historias, experiencias y resiliencia.">
+    <meta name="description" content="Positivas en Positivo: un espacio para compartir historias, experiencias, reflexión y resiliencia.">
 
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -17,87 +17,185 @@
 
 <body>
 
-    <header>
-        <nav>
+    <!-- MENÚ PRINCIPAL -->
+
+    <header class="encabezado">
+        <nav class="menu-navegacion">
+
             <a href="#inicio" class="logo">
                 Positivas en Positivo
             </a>
 
-            <ul>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu-principal">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <ul class="menu-lista" id="menu-principal">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#historia">Nuestra historia</a></li>
                 <li><a href="#comunidad">Comunidad</a></li>
-                <li><a href="#journals">Journals</a></li>
+                <li><a href="#journals">Nuestros journals</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+
         </nav>
     </header>
 
     <main>
 
-        <section id="inicio" class="hero">
-            <div class="hero-contenido">
+        <!-- 1. PRESENTACIÓN DE YENNIFER -->
 
-                <p class="hero-etiqueta">
-                    UN ESPACIO PARA COMPARTIR Y CRECER
-                </p>
+        <section id="inicio" class="presentacion">
 
-                <h1>
-                    Cada historia tiene un valor.
-                    <span>Cada vida merece ser celebrada.</span>
-                </h1>
+            <div class="presentacion-contenedor">
 
-                <p class="hero-descripcion">
-                    Positivas en Positivo nace para dar voz a las experiencias,
-                    compartir historias y construir un espacio de encuentro,
-                    expresión y resiliencia.
-                </p>
+                <div class="presentacion-fotografia">
+                    <div class="marco-editorial">
 
-                <a href="#historia" class="boton-principal">
-                    Conoce nuestra historia
-                </a>
+                        <div class="foto-yennifer">
+                            <img
+                                src="imagenes/yennifer/yennifer.png"
+                                alt="Yennifer Rivero, creadora de Positivas en Positivo">
+                        </div>
+
+                        <div class="foto-decoracion">
+                            Positivas en Positivo
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="presentacion-texto">
+
+                    <p class="seccion-etiqueta">
+                        CONOCE A QUIEN ESTÁ DETRÁS DEL PROYECTO
+                    </p>
+
+                    <h1>
+                        Detrás de Positivas en Positivo está
+                        <span>Yennifer Rivero.</span>
+                    </h1>
+
+                    <p>
+                        Soy Yennifer Rivero, venezolana, mujer, mamá,
+                        esposa, abuela y migrante en Estados Unidos.
+                    </p>
+
+                    <p>
+                        La vida me ha llevado a recorrer distintos caminos,
+                        asumir nuevos retos y descubrir que siempre podemos
+                        encontrar motivos para seguir creciendo, reinventarnos
+                        y construir nuevos sueños.
+                    </p>
+
+                    <p>
+                        Mis raíces venezolanas, mi familia y las experiencias
+                        que he vivido han moldeado la mujer que soy hoy.
+                        Creo en la importancia de acompañarnos, escucharnos
+                        y reconocer que cada historia tiene un valor que
+                        merece ser compartido.
+                    </p>
+
+                    <p>
+                        Hoy, desde mi experiencia y con el deseo de aportar
+                        algo significativo a otras personas, doy vida a
+                        iniciativas que buscan ofrecer compañía, reflexión
+                        y herramientas para afrontar los momentos difíciles
+                        de la vida.
+                    </p>
+
+                    <a href="#historia" class="boton-principal">
+                        Conoce nuestra historia
+                    </a>
+
+                </div>
 
             </div>
+
         </section>
 
+
+        <!-- 2. HISTORIA Y NACIMIENTO DEL PROYECTO -->
 
         <section id="historia" class="historia">
-            <div class="historia-contenido">
 
-                <p class="seccion-etiqueta">NUESTRA HISTORIA</p>
+            <div class="historia-contenedor">
 
-                <h2>
-                    Un espacio donde las historias
-                    <span>se transforman en esperanza.</span>
-                </h2>
+                <div class="historia-imagen">
+                    <img
+                        src="imagenes/yennifer/positivas/logo_pp.png"
+                        alt="Ilustración de Positivas en Positivo, dos mujeres que representan la fuerza y el acompañamiento"
+                        loading="lazy">
+                </div>
 
-                <p>
-                    Positivas en Positivo nace de la necesidad de compartir,
-                    escuchar y reconocer el valor de cada experiencia de vida.
-                </p>
+                <div class="historia-contenido">
 
-                <p>
-                    Creemos en el poder de las palabras, la expresión creativa
-                    y el acompañamiento. Queremos construir una comunidad donde
-                    cada persona pueda sentirse escuchada, representada y libre
-                    de compartir su historia.
-                </p>
+                    <p class="seccion-etiqueta">
+                        EL ORIGEN DE UNA INICIATIVA
+                    </p>
 
-                <p>
-                    A través de nuestros journals y de las experiencias de
-                    nuestra comunidad, buscamos abrir espacios para la reflexión,
-                    el autocuidado y la resiliencia.
-                </p>
+                    <h2>
+                        Una experiencia personal
+                        <span>que se convirtió en propósito.</span>
+                    </h2>
+
+                    <p>
+                        Hace casi 20 años recibí un diagnóstico de VIH que
+                        cambió mi manera de mirar la vida. Fue el comienzo
+                        de un camino lleno de aprendizajes, desafíos y
+                        descubrimientos personales.
+                    </p>
+
+                    <p>
+                        Con el tiempo comprendí que vivir con VIH no significa
+                        dejar de soñar, amar, formar una familia ni hacer planes
+                        para el futuro. Un diagnóstico puede cambiar algunas
+                        circunstancias, pero no tiene por qué definir nuestra
+                        identidad ni limitar lo que podemos llegar a ser.
+                    </p>
+
+                    <p>
+                        De esa experiencia nació primero Mi Espacio Positivo,
+                        un diario creado para detenernos, escuchar nuestras
+                        emociones, reflexionar y volver a conectar con
+                        nosotras mismas.
+                    </p>
+
+                    <p>
+                        Más adelante, ese deseo de acompañar y compartir fue
+                        creciendo hasta convertirse en Positivas en Positivo:
+                        una comunidad que busca ofrecer apoyo emocional,
+                        visibilidad y espacios de encuentro para mujeres
+                        que viven con VIH y para personas que atraviesan
+                        otros diagnósticos o momentos difíciles.
+                    </p>
+
+                    <p class="historia-destacada">
+                        Porque un diagnóstico puede formar parte de nuestra
+                        historia, pero no tiene que determinar nuestra vida.
+                    </p>
+
+                </div>
 
             </div>
+
         </section>
 
+
+        <!-- 3. VOCES DE LA COMUNIDAD -->
 
         <section id="comunidad" class="comunidad">
 
             <div class="comunidad-encabezado">
 
-                <p class="seccion-etiqueta">NUESTRA COMUNIDAD</p>
+                <p class="seccion-etiqueta">
+                    VOCES DE NUESTRA COMUNIDAD
+                </p>
 
                 <h2>
                     Cada voz cuenta.
@@ -106,50 +204,52 @@
 
                 <p>
                     Detrás de cada historia hay una experiencia única.
-                    Compartir nuestras vivencias puede abrir caminos,
-                    generar empatía y recordarnos que no estamos solos.
+                    Escuchar y compartir nuestras vivencias puede generar
+                    empatía, abrir caminos y recordarnos que no estamos solos.
                 </p>
 
             </div>
 
-            <div class="comunidad-tarjetas">
+            <div class="voces-contenedor">
 
-                <article class="tarjeta-comunidad">
-                    <h3>Historias que inspiran</h3>
-                    <p>
-                        Experiencias reales de personas que han encontrado
-                        nuevas formas de afrontar sus desafíos.
-                    </p>
-                </article>
+                <article class="voz-intro">
 
-                <article class="tarjeta-comunidad">
-                    <h3>Un espacio para expresarnos</h3>
-                    <p>
-                        Palabras, emociones y reflexiones compartidas
-                        desde el respeto y la libertad de cada persona.
-                    </p>
-                </article>
+                    <span class="voz-icono">
+                        <i class="bi bi-chat-heart"></i>
+                    </span>
 
-                <article class="tarjeta-comunidad">
-                    <h3>Una comunidad que acompaña</h3>
+                    <h3>Historias que merecen ser escuchadas</h3>
+
                     <p>
-                        Un lugar donde escuchar, aprender y reconocer
-                        el valor de nuestras experiencias.
+                        Queremos abrir este espacio para compartir palabras,
+                        experiencias y reflexiones de quienes forman parte
+                        de nuestra comunidad.
                     </p>
+
+                    <p class="voz-nota">
+                        Próximamente encontrarás aquí las voces de nuestros
+                        participantes, siempre con su autorización.
+                    </p>
+
                 </article>
 
             </div>
+
         </section>
 
+
+        <!-- 4. NUESTROS JOURNALS -->
 
         <section id="journals" class="journals">
 
             <div class="journals-encabezado">
 
-                <p class="seccion-etiqueta">NUESTROS JOURNALS</p>
+                <p class="seccion-etiqueta">
+                    NUESTRAS CREACIONES
+                </p>
 
                 <h2>
-                    Un espacio para conectar
+                    Herramientas para conectar
                     <span>contigo misma.</span>
                 </h2>
 
@@ -168,7 +268,8 @@
                     <div class="journal-imagen">
                         <img
                             src="imagenes/mi_espacio_positivo/MiEspacioPositivo.png"
-                            alt="Portada del journal Mi Espacio Positivo">
+                            alt="Portada del journal Mi Espacio Positivo"
+                            loading="lazy">
                     </div>
 
                     <div class="journal-info">
@@ -185,7 +286,8 @@
                             experiencias y celebrar cada pequeño avance.
                         </p>
 
-                        <a href="https://www.amazon.com/dp/B0HGTLWBSY"
+                        <a
+                            href="https://www.amazon.com/dp/B0HGTLWBSY"
                             class="boton-journal"
                             target="_blank"
                             rel="noopener noreferrer">
@@ -193,6 +295,7 @@
                         </a>
 
                     </div>
+
                 </article>
 
 
@@ -200,9 +303,9 @@
 
                     <div class="journal-imagen">
                         <img
-                            
                             src="imagenes/colores_resiliencia/ColoresDeResiliencia.png"
-                            alt="Portada del journal Colores de Resiliencia">
+                            alt="Portada del journal Colores de Resiliencia"
+                            loading="lazy">
                     </div>
 
                     <div class="journal-info">
@@ -219,7 +322,8 @@
                             tus experiencias y tu propia capacidad de resiliencia.
                         </p>
 
-                        <a href="https://www.amazon.com/dp/B0HPSRKBLY"
+                        <a
+                            href="https://www.amazon.com/dp/B0HPSRKBLY"
                             class="boton-journal"
                             target="_blank"
                             rel="noopener noreferrer">
@@ -227,17 +331,23 @@
                         </a>
 
                     </div>
+
                 </article>
 
             </div>
+
         </section>
 
+
+        <!-- 5. CONTACTO Y PARTICIPACIÓN -->
 
         <section id="contacto" class="contacto">
 
             <div class="contacto-contenido">
 
-                <p class="seccion-etiqueta">SIGAMOS CONECTADOS</p>
+                <p class="seccion-etiqueta">
+                    SIGAMOS CONECTADOS
+                </p>
 
                 <h2>
                     Las historias también nos unen.
@@ -253,7 +363,8 @@
 
                 <div class="redes-sociales">
 
-                    <a href="https://www.instagram.com/positivasenpositivo/"
+                    <a
+                        href="https://www.instagram.com/positivasenpositivo/"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="enlace-red">
@@ -261,7 +372,8 @@
                         <span>Instagram</span>
                     </a>
 
-                    <a href="https://www.instagram.com/yennilhi/"
+                    <a
+                        href="https://www.instagram.com/yennilhi/"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="enlace-red">
@@ -269,15 +381,17 @@
                         <span>Yennifer</span>
                     </a>
 
-                    <a href="https://www.facebook.com/yennifer.rivero"
+                    <a
+                        href="https://www.facebook.com/yennifer.rivero"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="enlace-red">
-                    <i class="bi bi-facebook"></i>
+                        <i class="bi bi-facebook"></i>
                         <span>Facebook</span>
                     </a>
 
-                    <a href="https://www.tiktok.com/@positivasenpositivo"
+                    <a
+                        href="https://www.tiktok.com/@positivasenpositivo"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="enlace-red">
@@ -285,7 +399,8 @@
                         <span>TikTok</span>
                     </a>
 
-                    <a href="mailto:positivasenpositivo@gmail.com"
+                    <a
+                        href="mailto:positivasenpositivo@gmail.com"
                         class="enlace-red">
                         <i class="bi bi-envelope"></i>
                         <span>Correo</span>
@@ -295,15 +410,18 @@
 
                 <div class="invitacion-comunidad">
 
-                    <p>¿Quieres formar parte de nuestra comunidad?</p>
+                    <p>
+                        ¿Quieres formar parte de nuestra comunidad?
+                    </p>
 
                     <a href="comunidad.html" class="boton-principal">
                         Regístrate aquí
                     </a>
-                
+
                 </div>
 
             </div>
+
         </section>
 
     </main>
@@ -311,6 +429,39 @@
     <footer>
         <p>© 2026 Positivas en Positivo. Todos los derechos reservados.</p>
     </footer>
+
+
+    <!-- MENÚ RESPONSIVE -->
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuLista = document.querySelector('.menu-lista');
+
+        if (menuToggle && menuLista) {
+            menuToggle.addEventListener('click', () => {
+                const abierto = menuLista.classList.toggle('activo');
+
+                menuToggle.setAttribute('aria-expanded', abierto);
+                menuToggle.setAttribute(
+                    'aria-label',
+                    abierto ? 'Cerrar menú' : 'Abrir menú'
+                );
+
+                menuToggle.innerHTML = abierto
+                    ? '<i class="bi bi-x-lg"></i>'
+                    : '<i class="bi bi-list"></i>';
+            });
+
+            menuLista.querySelectorAll('a').forEach(enlace => {
+                enlace.addEventListener('click', () => {
+                    menuLista.classList.remove('activo');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.setAttribute('aria-label', 'Abrir menú');
+                    menuToggle.innerHTML = '<i class="bi bi-list"></i>';
+                });
+            });
+        }
+    </script>
 
 </body>
 </html>

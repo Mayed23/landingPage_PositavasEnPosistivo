@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
@@ -17,19 +18,30 @@
 
 <body>
 
-    <header>
-        <nav>
-            <a href="{% url 'home' %}" class="logo">
+    <header class="encabezado">
+        <nav class="menu-navegacion">
+
+            <a href="{% url 'home' %}#inicio" class="logo">
                 Positivas en Positivo
             </a>
 
-            <ul>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu-principal">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <ul class="menu-lista" id="menu-principal">
                 <li><a href="{% url 'home' %}#inicio">Inicio</a></li>
                 <li><a href="{% url 'home' %}#historia">Nuestra historia</a></li>
                 <li><a href="{% url 'home' %}#comunidad">Comunidad</a></li>
-                <li><a href="{% url 'home' %}#journals">Journals</a></li>
+                <li><a href="{% url 'home' %}#journals">Nuestros journals</a></li>
                 <li><a href="{% url 'home' %}#contacto">Contacto</a></li>
             </ul>
+
         </nav>
     </header>
 
@@ -41,6 +53,38 @@
     <footer>
         <p>© 2026 Positivas en Positivo. Todos los derechos reservados.</p>
     </footer>
+
+    {% block scripts %}
+    {% endblock %}
+
+    <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuLista = document.querySelector('.menu-lista');
+
+    menuToggle.addEventListener('click', () => {
+        const abierto = menuLista.classList.toggle('activo');
+
+        menuToggle.setAttribute('aria-expanded', abierto);
+        menuToggle.setAttribute(
+            'aria-label',
+            abierto ? 'Cerrar menú' : 'Abrir menú'
+        );
+
+        menuToggle.innerHTML = abierto
+            ? '<i class="bi bi-x-lg"></i>'
+            : '<i class="bi bi-list"></i>';
+    });
+
+    menuLista.querySelectorAll('a').forEach(enlace => {
+        enlace.addEventListener('click', () => {
+            menuLista.classList.remove('activo');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', 'Abrir menú');
+            menuToggle.innerHTML = '<i class="bi bi-list"></i>';
+        });
+    });
+</script>
+    
 
 </body>
 </html>

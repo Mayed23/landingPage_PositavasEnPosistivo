@@ -1,78 +1,164 @@
 
 {% extends 'base.html' %}
-
 {% load static %}
 
 {% block title %}
-Positivas en Positivo | Un espacio para compartir
+Positivas en Positivo | Historias que nos conectan
 {% endblock %}
 
 {% block content %}
 
-<section id="inicio" class="hero">
+<!-- 1. PRESENTACIÓN DE YENNIFER -->
 
-    <div class="hero-contenido">
+<section id="inicio" class="presentacion">
 
-        <p class="hero-etiqueta">UN ESPACIO PARA COMPARTIR Y CRECER</p>
+    <div class="presentacion-contenedor">
 
-        <h1>
-            Cada historia tiene un valor.
-            <span>Cada vida merece ser celebrada.</span>
-        </h1>
+        <div class="presentacion-fotografia">
+            <div class="marco-editorial">
 
-        <p class="hero-descripcion">
-            Positivas en Positivo nace para dar voz a las experiencias,
-            compartir historias y construir un espacio de encuentro,
-            expresión y resiliencia.
-        </p>
+                <!-- ESPACIO RESERVADO PARA LA FOTOGRAFÍA DE YENNIFER -->
 
-        <a href="#historia" class="boton-principal">
-            Conoce nuestra historia
-        </a>
+                <div class="foto-yennifer">
+                    <img
+                        src="{% static 'images/yennifer/yennifer.png' %}"
+                        alt="Yennifer Rivero, creadora de Positivas en Positivo"
+                    >
+                </div>
+
+                <div class="foto-decoracion">
+                    Positivas en Positivo
+                </div>
+
+            </div>
+        </div>
+
+        <div class="presentacion-texto">
+
+            <p class="seccion-etiqueta">
+                CONOCE A QUIEN ESTÁ DETRÁS DEL PROYECTO
+            </p>
+
+            <h1>
+                Detrás de Positivas en Positivo está
+                <span>Yennifer Rivero.</span>
+            </h1>
+
+            <p>
+                Soy Yennifer Rivero, venezolana, mujer, mamá,
+                esposa, abuela y migrante en Estados Unidos.
+            </p>
+
+            <p>
+                La vida me ha llevado a recorrer distintos caminos,
+                asumir nuevos retos y descubrir que siempre podemos
+                encontrar motivos para seguir creciendo, reinventarnos
+                y construir nuevos sueños.
+            </p>
+
+            <p>
+                Mis raíces venezolanas, mi familia y las experiencias
+                que he vivido han moldeado la mujer que soy hoy.
+                Creo en la importancia de acompañarnos, escucharnos
+                y reconocer que cada historia tiene un valor que
+                merece ser compartido.
+            </p>
+
+            <p>
+                Hoy, desde mi experiencia y con el deseo de aportar
+                algo significativo a otras personas, doy vida a
+                iniciativas que buscan ofrecer compañía, reflexión
+                y herramientas para afrontar los momentos difíciles
+                de la vida.
+            </p>
+
+            <a href="#historia" class="boton-principal">
+                Conoce nuestra historia
+            </a>
+
+        </div>
 
     </div>
 
 </section>
 
+<!-- 2. HISTORIA Y NACIMIENTO DEL PROYECTO -->
 
 <section id="historia" class="historia">
 
-    <div class="historia-contenido">
+    <div class="historia-contenedor">
 
-        <p class="seccion-etiqueta">NUESTRA HISTORIA</p>
+        <div class="historia-imagen">
+            <img
+                src="{% static 'images/yennifer/positivas/logo_pp.png' %}"
+                alt="Ilustración de Positivas en Positivo, dos mujeres que representan la fuerza y el acompañamiento"
+                loading="lazy"
+            >
+        </div>
 
-        <h2>
-            Un espacio donde las historias
-            <span>se transforman en esperanza.</span>
-        </h2>
+        <div class="historia-contenido">
 
-        <p>
-            Positivas en Positivo nace de la necesidad de compartir,
-            escuchar y reconocer el valor de cada experiencia de vida.
-        </p>
+            <p class="seccion-etiqueta">
+                EL ORIGEN DE UNA INICIATIVA
+            </p>
 
-        <p>
-            Creemos en el poder de las palabras, la expresión creativa
-            y el acompañamiento. Queremos construir una comunidad donde
-            cada persona pueda sentirse escuchada, representada y libre
-            de compartir su historia.
-        </p>
+            <h2>
+                Una experiencia personal
+                <span>que se convirtió en propósito.</span>
+            </h2>
 
-        <p>
-            A través de nuestros journals y de las experiencias de
-            nuestra comunidad, buscamos abrir espacios para la reflexión,
-            el autocuidado y la resiliencia.
-        </p>
+            <p>
+                Hace casi 20 años recibí un diagnóstico de VIH que
+                cambió mi manera de mirar la vida. Fue el comienzo
+                de un camino lleno de aprendizajes, desafíos y
+                descubrimientos personales.
+            </p>
+
+            <p>
+                Con el tiempo comprendí que vivir con VIH no significa
+                dejar de soñar, amar, formar una familia ni hacer planes
+                para el futuro. Un diagnóstico puede cambiar algunas
+                circunstancias, pero no tiene por qué definir nuestra
+                identidad ni limitar lo que podemos llegar a ser.
+            </p>
+
+            <p>
+                De esa experiencia nació primero Mi Espacio Positivo,
+                un diario creado para detenernos, escuchar nuestras
+                emociones, reflexionar y volver a conectar con
+                nosotras mismas.
+            </p>
+
+            <p>
+                Más adelante, ese deseo de acompañar y compartir fue
+                creciendo hasta convertirse en Positivas en Positivo:
+                una comunidad que busca ofrecer apoyo emocional,
+                visibilidad y espacios de encuentro para mujeres
+                que viven con VIH y para personas que atraviesan
+                otros diagnósticos o momentos difíciles.
+            </p>
+
+            <p class="historia-destacada">
+                Porque un diagnóstico puede formar parte de nuestra
+                historia, pero no tiene que determinar nuestra vida.
+            </p>
+
+        </div>
 
     </div>
 
 </section>
 
+
+<!-- 3. VOCES DE LA COMUNIDAD -->
 
 <section id="comunidad" class="comunidad">
 
     <div class="comunidad-encabezado">
-        <p class="seccion-etiqueta">NUESTRA COMUNIDAD</p>
+
+        <p class="seccion-etiqueta">
+            VOCES DE NUESTRA COMUNIDAD
+        </p>
 
         <h2>
             Cada voz cuenta.
@@ -81,35 +167,34 @@ Positivas en Positivo | Un espacio para compartir
 
         <p>
             Detrás de cada historia hay una experiencia única.
-            Compartir nuestras vivencias puede abrir caminos,
-            generar empatía y recordarnos que no estamos solos.
+            Escuchar y compartir nuestras vivencias puede generar
+            empatía, abrir caminos y recordarnos que no estamos solos.
         </p>
+
     </div>
 
-    <div class="comunidad-tarjetas">
+    <div class="voces-contenedor">
 
-        <article class="tarjeta-comunidad">
-            <h3>Historias que inspiran</h3>
-            <p>
-                Experiencias reales de personas que han encontrado
-                nuevas formas de afrontar sus desafíos.
-            </p>
-        </article>
+        <!-- ESPACIO PARA FUTUROS TESTIMONIOS AUTORIZADOS -->
 
-        <article class="tarjeta-comunidad">
-            <h3>Un espacio para expresarnos</h3>
-            <p>
-                Palabras, emociones y reflexiones compartidas
-                desde el respeto y la libertad de cada persona.
-            </p>
-        </article>
+        <article class="voz-intro">
+            <span class="voz-icono">
+                <i class="bi bi-chat-heart"></i>
+            </span>
 
-        <article class="tarjeta-comunidad">
-            <h3>Una comunidad que acompaña</h3>
+            <h3>Historias que merecen ser escuchadas</h3>
+
             <p>
-                Un lugar donde escuchar, aprender y reconocer
-                el valor de nuestras experiencias.
+                Queremos abrir este espacio para compartir palabras,
+                experiencias y reflexiones de quienes forman parte
+                de nuestra comunidad.
             </p>
+
+            <p class="voz-nota">
+                Próximamente encontrarás aquí las voces de nuestros
+                participantes, siempre con su autorización.
+            </p>
+
         </article>
 
     </div>
@@ -117,13 +202,18 @@ Positivas en Positivo | Un espacio para compartir
 </section>
 
 
+<!-- 4. NUESTROS PRODUCTOS -->
+
 <section id="journals" class="journals">
 
     <div class="journals-encabezado">
-        <p class="seccion-etiqueta">NUESTROS JOURNALS</p>
+
+        <p class="seccion-etiqueta">
+            NUESTRAS CREACIONES
+        </p>
 
         <h2>
-            Un espacio para conectar
+            Herramientas para conectar
             <span>contigo misma.</span>
         </h2>
 
@@ -132,6 +222,7 @@ Positivas en Positivo | Un espacio para compartir
             la expresión personal y el descubrimiento de nuevas
             formas de mirar la vida.
         </p>
+
     </div>
 
     <div class="journals-contenedor">
@@ -141,14 +232,20 @@ Positivas en Positivo | Un espacio para compartir
         <article class="journal-card">
 
             <div class="journal-imagen">
+
                 <img
                     src="{% static 'images/mi_espacio_positivo/MiEspacioPositivo.png' %}"
                     alt="Portada del journal Mi Espacio Positivo"
+                    loading="lazy"
                 >
+
             </div>
 
             <div class="journal-info">
-                <p class="journal-categoria">BIENESTAR Y AMOR PROPIO</p>
+
+                <p class="journal-categoria">
+                    BIENESTAR Y AMOR PROPIO
+                </p>
 
                 <h3>Mi Espacio Positivo</h3>
 
@@ -158,29 +255,39 @@ Positivas en Positivo | Un espacio para compartir
                     experiencias y celebrar cada pequeño avance.
                 </p>
 
-                <a href="https://www.amazon.com/dp/B0HGTLWBSY"
+                <a
+                    href="https://www.amazon.com/dp/B0HGTLWBSY"
                     class="boton-journal"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                >
                     Conoce el journal
                 </a>
+
             </div>
 
         </article>
+
 
         <!-- JOURNAL 2 -->
 
         <article class="journal-card">
 
             <div class="journal-imagen">
+
                 <img
                     src="{% static 'images/colores_resiliencia/ColoresDeResiliencia.png' %}"
                     alt="Portada del journal Colores de Resiliencia"
+                    loading="lazy"
                 >
+
             </div>
 
             <div class="journal-info">
-                <p class="journal-categoria">EXPRESIÓN Y RESILIENCIA</p>
+
+                <p class="journal-categoria">
+                    EXPRESIÓN Y RESILIENCIA
+                </p>
 
                 <h3>Colores de Resiliencia</h3>
 
@@ -190,13 +297,15 @@ Positivas en Positivo | Un espacio para compartir
                     tus experiencias y tu propia capacidad de resiliencia.
                 </p>
 
-                <a href="https://www.amazon.com/dp/B0HPSRKBLY"
+                <a
+                    href="https://www.amazon.com/dp/B0HPSRKBLY"
                     class="boton-journal"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                >
                     Conoce el journal
                 </a>
-            
+
             </div>
 
         </article>
@@ -205,11 +314,16 @@ Positivas en Positivo | Un espacio para compartir
 
 </section>
 
+
+<!-- 5. CONTACTO Y PARTICIPACIÓN -->
+
 <section id="contacto" class="contacto">
 
     <div class="contacto-contenido">
 
-        <p class="seccion-etiqueta">SIGAMOS CONECTADOS</p>
+        <p class="seccion-etiqueta">
+            SIGAMOS CONECTADOS
+        </p>
 
         <h2>
             Las historias también nos unen.
@@ -225,49 +339,61 @@ Positivas en Positivo | Un espacio para compartir
 
         <div class="redes-sociales">
 
-            <div class="redes-sociales">
+            <a
+                href="https://www.instagram.com/positivasenpositivo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="enlace-red"
+            >
+                <i class="bi bi-instagram"></i>
+                <span>Instagram</span>
+            </a>
 
-                <a href="https://www.instagram.com/positivasenpositivo/"
-                target="_blank" rel="noopener noreferrer"
-                class="enlace-red">
-                    <i class="bi bi-instagram"></i>
-                    <span>Instagram</span>
-                </a>
+            <a
+                href="https://www.instagram.com/yennilhi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="enlace-red"
+            >
+                <i class="bi bi-person-circle"></i>
+                <span>Yennifer</span>
+            </a>
 
-                <a href="https://www.instagram.com/yennilhi/"
-                target="_blank" rel="noopener noreferrer"
-                class="enlace-red">
-                    <i class="bi bi-person-circle"></i>
-                    <span>Yennifer</span>
-                </a>
+            <a
+                href="https://www.facebook.com/yennifer.rivero"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="enlace-red"
+            >
+                <i class="bi bi-facebook"></i>
+                <span>Facebook</span>
+            </a>
 
-                <a href="https://www.facebook.com/yennifer.rivero"
-                target="_blank" rel="noopener noreferrer"
-                class="enlace-red">
-                    <i class="bi bi-facebook"></i>
-                    <span>Facebook</span>
-                </a>
+            <a
+                href="https://www.tiktok.com/@positivasenpositivo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="enlace-red"
+            >
+                <i class="bi bi-tiktok"></i>
+                <span>TikTok</span>
+            </a>
 
-                <a href="https://www.tiktok.com/@positivasenpositivo"
-                target="_blank" rel="noopener noreferrer"
-                class="enlace-red">
-                    <i class="bi bi-tiktok"></i>
-                    <span>TikTok</span>
-                </a>
-
-                <a href="mailto:positivasenpositivo@gmail.com"
-                class="enlace-red">
-                    <i class="bi bi-envelope"></i>
-                    <span>Correo</span>
-                </a>
-
-            </div>
+            <a
+                href="mailto:positivasenpositivo@gmail.com"
+                class="enlace-red"
+            >
+                <i class="bi bi-envelope"></i>
+                <span>Correo</span>
+            </a>
 
         </div>
 
         <div class="invitacion-comunidad">
 
-            <p>¿Quieres formar parte de nuestra comunidad?</p>
+            <p>
+                ¿Quieres formar parte de nuestra comunidad?
+            </p>
 
             <a href="{% url 'comunidad' %}" class="boton-principal">
                 Regístrate aquí
@@ -279,6 +405,4 @@ Positivas en Positivo | Un espacio para compartir
 
 </section>
 
-
 {% endblock %}
-
